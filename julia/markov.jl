@@ -1,4 +1,11 @@
-import Base.show
+#=
+
+Type for representing/dealing with Markov Chains
+
+@author : Spencer Lyon <spencer.lyon@nyu.edu>
+@date : 06/22/2014 01:35 AM
+
+=#
 
 type Markov
     P::Matrix{Float64}

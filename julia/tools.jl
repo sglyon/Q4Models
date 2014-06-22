@@ -1,6 +1,6 @@
 #=
 
-Generic Model interface
+Module to hold random tools collected along the way
 
 @author: Spencer Lyon <sgl290@stern.nyu.edu>
 @date: 06/21/2014 11:39 PM
@@ -8,6 +8,11 @@ Generic Model interface
 =#
 
 module Tools
+
+import Base: show
+
+include("markov.jl")
+include("discretize.jl")
 
 export
     # markov
@@ -17,8 +22,5 @@ export
     # discretize
     tauchen,
     rouwenhorst
-
-include("markov.jl")
-include("discretize.jl")
 
 end  # Module
